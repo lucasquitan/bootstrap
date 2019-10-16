@@ -281,31 +281,114 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
                 vel aliquam enim.
               </p>
+              <a href="#" class="card-link">Done</a>
             </div>
-
-            <a href="#" class="card-link">Done</a>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="card">
             <img src="./imgs/3.jpg" alt="" class="card-img-top" />
             <div class="card-body">
-              <h4 class="card-title">Prypiat</h4>
+              <h4 class="card-title">Modal</h4>
               <h6 class="card-subtittle my-2 text-muted">
-                Thsit ahdresti chernobyl
+                Subscribe
               </h6>
               <p class="card-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
                 vel aliquam enim.
               </p>
-              <a href="#" class="card-link">Done</a>
-              <a href="#" class="card-link">Priatus</a>
+
+              <a
+                href="#"
+                class="card-link"
+                data-toggle="modal"
+                data-target="#siteModal"
+                >Click here</a
+              >
             </div>
           </div>
         </div>
       </div>
 
       <!-- Modal-->
+      <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="model-tittle">Subscribe</h5>
+              <button class="close" type="button" data-dismiss="modal">
+                <span>&times;</span>
+                <!-- O x do modal-->
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-6">
+                    <h5>Lorem ipsum</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Duis vel aliquam enim. Sed semper, tellus ut euismod
+                      ultricies, odio enim hendrerit lectus, dignissim tincidunt
+                      turpis neque vel erat. Phasellus mi tortor, facilisis
+                      consequat fermentum et, aliquet ut nunc. Pellentesque
+                      pharetra purus ac lectus fringilla, a lacinia ante
+                      vehicula. Mauris sem turpis, iaculis ac consectetur id,
+                      rhoncus non leo. Mauris et turpis eget lorem porta
+                      consequat.
+                    </p>
+                  </div>
+                  <div class="col-6">
+                    <h5>Lorem ipsum</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Duis vel aliquam enim. Sed semper, tellus ut euismod
+                      ultricies, odio enim hendrerit lectus, dignissim tincidunt
+                      turpis neque vel erat. Phasellus mi tortor, facilisis
+                      consequat fermentum et, aliquet ut nunc. Pellentesque
+                      pharetra purus ac lectus fringilla, a lacinia ante
+                      vehicula. Mauris sem turpis, iaculis ac consectetur id,
+                      rhoncus non leo. Mauris et turpis eget lorem porta
+                      consequat.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <img src="./imgs/2.jpg" alt="" class="card-img-top" />
+                      <div class="card-header">
+                        <h4 class="card-tittle">Stravisky</h4>
+                        <h6 class="card-subtittle text-muted">
+                          Hey, i've a header
+                        </h6>
+                      </div>
+
+                      <div class="card-body">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Duis vel aliquam enim.
+                        </p>
+                        <a href="#" class="card-link">Done</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary btn-sm"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Optional JavaScript -->
