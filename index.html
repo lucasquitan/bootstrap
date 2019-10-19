@@ -13,7 +13,10 @@
       rel="stylesheet"
       href="./node_modules/bootstrap/compiler/bootstrap.css"
     />
-    <link rel="stylesheet" href="./node_modules/bootstrap/compiler/style.css" />
+    <link rel="stylesheet" href="./style/css/style.css" />
+
+    <link rel="stylesheet" href="./fontawesome-free-5.11.2-web/css/all.css" />
+
     <title>Bootstrap 4</title>
   </head>
 
@@ -87,29 +90,21 @@
 
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./imgs/1.jpg" class="img-fluid d-block" />
-          <div class="carousel-caption d-none d-md-block bg-dark text-light">
-            <h3>Administrador de Servidores</h3>
-            <p>
-              Confira nosso curso e saiba tudo sobre servidores Linux e Windows.
-            </p>
+          <img src="./imgs/node.png" class="img-fluid d-block" />
+          <div class="carousel-caption d-none d-md-block text-light">
+            <h3>Node.js</h3>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./imgs/2.jpg" class="img-fluid d-block" />
-          <div class="carousel-caption d-none d-md-block bg-dark text-light">
-            <h3>Desenvolvedor Back-End</h3>
-            <p>Aprenda a stack mais procurada pelas grandes empresas.</p>
+          <img src="./imgs/react.jpeg" class="img-fluid d-block" />
+          <div class="carousel-caption d-none d-md-block  text-light">
+            <h3>React.js</h3>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./imgs/3.jpg" class="img-fluid d-block" />
-          <div class="carousel-caption d-none d-md-block bg-dark text-light">
-            <h3>Diagnóstico de Rede</h3>
-            <p>
-              Seja capaz de capturar e entender qualquer relatório de pacotes de
-              rede.
-            </p>
+          <img src="./imgs/react-native.jpg" class="img-fluid d-block" />
+          <div class="carousel-caption d-none d-md-block text-light">
+            <h3>ReactNative</h3>
           </div>
         </div>
       </div>
@@ -138,7 +133,9 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center my-5">
-          <h1 class="display-3">Wellcome</h1>
+          <h1 class="display-3">
+            <i class="fa fa-cogs text-primary"></i> Wellcome
+          </h1>
           <p>
             Seja bem vindo ao meu site.
           </p>
@@ -311,11 +308,15 @@
         </div>
       </div>
 
+      <!-- Jumbotron-->
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
           <div class="row">
             <div class="col-12 text-center">
-              <h1 class="display-4">Lorem Ipsum</h1>
+              <h1 class="display-4">
+                <i class="fa fa-photo-video text-primary"></i>
+                Media
+              </h1>
               <p>
                 "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
                 consectetur, adipisci velit..."
@@ -429,6 +430,116 @@
         </div>
       </div>
 
+      <!-- Form -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="display-4 text-center my-4">
+              <i class="fab fa-telegram-plane text-primary"></i>
+              Form
+            </h1>
+          </div>
+        </div>
+        <di class="row mb-5 justify-content-center">
+          <div class="col-sm-12 col-md-10 col-lg-8">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-sm-6">
+                  <label for="inputNome">Nome</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputNome"
+                    placeholder="Nome"
+                  />
+                </div>
+
+                <div class="form-group col-sm-6">
+                  <label for="inputEmail">Email</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputEmail"
+                    placeholder="E-mail"
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-sm-12">
+                  <label for="inputEndereco">Endereço</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputEndereco"
+                    placeholder="Endereço"
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-sm-6">
+                  <label for="inputCidade">Cidade</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputCidade"
+                    placeholder="Cidade"
+                  />
+                </div>
+
+                <div class="form-group col-sm-4">
+                  <label for="inputEstado">Estado</label>
+                  <select class="form-control" id="inputEstado">
+                    <option selected>Escolha seu Estado</option>
+                    <option>...</option>
+                    <option>...</option>
+                    <option>...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+
+                <div class="form-group col-sm-2">
+                  <label for="inputCEP">CEP</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputCEP"
+                    placeholder="CEP"
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-sm-12">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" /> Desejo
+                      receber novidades por email
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-sm-12">
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                  <a
+                    tabindex="0"
+                    class="btn btn-secondary"
+                    role="button"
+                    data-toggle="popover"
+                    data-placement="right"
+                    data-trigger="focus"
+                    title="SOS"
+                    data-content="Como posso te ajudar?"
+                    >Help</a
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
+        </di>
+      </div>
+
       <!-- Modal-->
       <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
@@ -515,5 +626,10 @@
     <script src="./node_modules/jquery/dist/jquery.js"></script>
     <script src="./node_modules/popper.js/dist/umd/popper.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('[data-toggle="popover"]').popover();
+      });
+    </script>
   </body>
 </html>
